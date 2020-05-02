@@ -1,0 +1,23 @@
+{% extends 'myapp/base.html' %}
+
+{% block content %}
+
+<div class='container'>
+	<p><button class="btn-right-done"><a href="add_image">Add Image and Text</a></button></p>
+	<p><button class="btn-right-done"><a href="apply_lsb">Apply LSB</a></button></p>
+	<p><button class="btn-right-done"><a href="convert_to_binary">Convert Image into Binary</a></button></p>
+	<p><button class="btn-right"><a href="apply_partitioning">Apply Partitioning</a></button></p>
+<!-- 	<p><button class="btn-right"><a href="#">Perform ZigZag</a></button></p>
+	<p><button class="btn-right"><a href="#">Perform Swapping</a></button></p> -->
+</div>
+
+
+<div class="foot-panel more-posts">
+<p><h5>The image in binary form</h5></p>
+{% for ins in s %}
+{{ ins }}
+{% endfor %}
+</div>
+
+
+{% endblock %}

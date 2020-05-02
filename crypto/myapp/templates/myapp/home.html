@@ -1,0 +1,80 @@
+{% extends 'myapp/base.html' %}
+
+{% block content %}
+
+
+    
+
+
+
+<div class='container'>
+	<p><button class="btn-right"><a href="add_image">Add Image and Text</a></button></p>
+	    <form method = "post" enctype="multipart/form-data"> 
+	    {% csrf_token %} 
+	    {{ form.as_p }} 
+    <button type="submit">Upload</button> 
+	</form> 
+<!-- 	<p><button class="btn-right"><a href="#">Apply LSB</a></button></p>
+	<p><button class="btn-right"><a href="#">Convert Image into Binary</a></button></p>
+	<p><button class="btn-right"><a href="#">Apply Partitioning</a></button></p>
+	<p><button class="btn-right"><a href="#">Perform ZigZag</a></button></p>
+	<p><button class="btn-right"><a href="#">Perform Swapping</a></button></p> -->
+</div>
+
+
+
+
+
+
+	<!-- <div class='container'>
+  <ul>
+    <li>
+      <a class='animated-arrow'>
+        <span class='the-arrow -left'>
+          <span class='shaft'></span>
+        </span>
+        <span class='main'>
+          <span class='text'>
+            Upload an Image
+          </span>
+          <span class='the-arrow -right'>
+            <span class='shaft'></span>
+          </span>
+        </span>
+      </a>
+    </li>
+    <li>
+      <a class='animated-arrow' href='https://google.com'>
+        <span class='the-arrow -left'>
+          <span class='shaft'></span>
+        </span>
+        <span class='main'>
+          <span class='text'>
+            View Projects
+          </span>
+          <span class='the-arrow -right'>
+            <span class='shaft'></span>
+          </span>
+        </span>
+      </a>
+    </li>
+    <li>
+      <a class='animated-arrow' href='https://google.com'>
+        <span class='the-arrow -left'>
+          <span class='shaft'></span>
+        </span>
+        <span class='main'>
+          <span class='text'>
+            Get in Touch
+          </span>
+          <span class='the-arrow -right'>
+            <span class='shaft'></span>
+          </span>
+        </span>
+      </a>
+    </li>
+  </ul>
+</div> -->
+
+
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'myapp/base.html' %}
+
+{% block content %}
+
+<div class='container'>
+	<p><button class="btn-right-done"><a href="add_image">Add Image and Text</a></button></p>
+	<p><button class="btn-right-done"><a href="apply_lsb">Apply LSB</a></button></p>
+	<p><button class="btn-right-done"><a href="convert_to_binary">Convert Image into Binary</a></button></p>
+	<p><button class="btn-right-done"><a href="apply_partitioning">Apply Partitioning</a></button></p>
+	<p><button class="btn-right"><a href="perform_zigzag">Perform ZigZag</a></button></p>
+	<!-- <p><button class="btn-right"><a href="#">Perform Swapping</a></button></p> -->
+</div>
+
+
+<div class="foot-panel more-posts">
+<p><h5>Number of partitions: {{ dic.part }}   </h5></p></div>
+<div class="foot-panel more-posts">
+<p><h5>Partition size: {{ dic.no}}</h5></p>
+
+</div>
+
+
+{% endblock %}

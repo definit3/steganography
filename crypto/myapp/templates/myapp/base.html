@@ -1,0 +1,32 @@
+ <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      {% load static %}
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="static/myapp/css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="static/myapp/css/blog.css" %}>
+      <link rel="stylesheet" href="static/myapp/css/arrow.css" %}>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <div class="foot-panel more-posts">
+            <div class="page-header"><h1><a href="add_image">CS557</a></h1></div>
+            <h4>An Effective Approach For Hiding Data In Digital Image Using Steganography And Applied Encryption</h4>
+      </div>
+
+
+    <div class="content container">
+        <div class="row">
+            <div class="col-md-8">
+            {% block content %}
+            {% endblock %}
+            </div>
+        </div>
+    </div>
+    </body>
+  </html>
