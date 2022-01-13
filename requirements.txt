@@ -26,7 +26,7 @@ numpy==1.18.3
 opencv-python==4.2.0.34
 pastel==0.2.0
 pexpect==4.8.0
-Pillow==7.1.2
+Pillow==9.0.0
 pkginfo==1.5.0.1
 poetry==1.0.5
 ptyprocess==0.6.0
