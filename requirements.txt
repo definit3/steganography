@@ -22,7 +22,7 @@ jsonschema==3.2.0
 keyring==20.0.1
 lockfile==0.12.2
 msgpack==1.0.0
-numpy==1.18.3
+numpy==1.22.0
 opencv-python==4.2.0.34
 pastel==0.2.0
 pexpect==4.8.0
